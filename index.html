@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 
 <head>
@@ -13,27 +9,96 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<style>
-		.sidebar {
+		.project-container {
+			display: flex;
+			align-items: center;
+			/* aligns the items vertically in the center */
+			margin-bottom: 100px;
+			width: 100%;
+		}
+
+		.project-image {
+			width: 40%;
+			/* Sets each div to occupy 50% of the project-container's width */
+			display: flex;
+			/* Applies flex layout to help with inner content alignment */
+			justify-content: center;
+			/* Centers the content horizontally */
+			align-items: center;
+			/* Centers the content vertically */
+			text-align: center;
+		}
+
+		.project-image img {
+			/* height: 80%; */
+			/* width: 80%; */
+			max-width: 80%;
+			/* object-fit: cover; */
+			/* This will cover the div's area, possibly cropping the image */
+			display: block;
+			margin: 0 auto;
+		}
+
+		.project-image-a {
+			display: inline-block;
+			/* Makes the link behave more like an image */
+		}
+
+		.project-description {
+			flex-grow: 1;
+			width: 60%;
+			margin-left: 20px;
+		}
+
+		.nav_bar {
+			height: 50px;
+			/* background-color: grey; */
+			background-image: url(./images/blue.jpg);
+			opacity: 0.85;
 			position: fixed;
-			/* Fixed positioning relative to the viewport */
-			top: 50%;
-			/* Position at the middle of the screen vertically */
-			left: 0;
-			/* Align to the left edge of the viewport */
-			transform: translateY(-50%);
-			/* Adjust to exactly center the sidebar vertically */
-			width: 200px;
-			/* Set the width of the sidebar */
-			background: #f0f0f0;
-			/* Sidebar background color */
-			padding: 10px;
-			box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-			/* Optional: adds shadow to the sidebar */
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+		}
+
+		.nav_bar a {
+			font-size: 16px;
+			font-weight: bold;
+			width: 250px;
+			/* height: 40px; */
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px;
+			transition: background-color 0.7s ease, transform 0.3s ease;
+		}
+
+		.nav_bar a:hover {
+			color: #ffee10;
+			box-shadow: 0 0 5px #ffee10;
+			text-shadow: 0 0 5px #ffee10;
+			background-color: grey;
+			transform: scale(1.1);
+		}
+
+		.subtitle {
+			color: white;
+			font-family: 'Times New Roman', Times, serif;
+		}
+
+		.body_text {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 19px;
+			line-height: 2;
+			color: rgba(245, 245, 245, 0.801)
 		}
 
 		.section {
@@ -47,548 +112,548 @@
 			/* Optional: rounds the corners of the section */
 		}
 
-		.section:hover {
-			background-color: rgba(20,
-					10,
-					13,
-					0.833);
-			/* Change background color on hover */
-			transform: scale(1.05);
-			/* Slightly increase size on hover */
+		.column-header {
+			/* background-color: #555; */
+			color: white;
+			text-align: center;
 		}
 
-		<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .resume-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .resume-table, .resume-table th, .resume-table td {
-        border: 0.1px solid #353131b7;
-    }
-    .resume-table th, .resume-table td {
-        padding: 8px;
-        text-align: left;
-    }
-    .resume-table th {
-        /* background-color: #333; */
-        color: white;
-    }
-    .column-header {
-        /* background-color: #555; */
-        color: white;
-        text-align: center;
-    }
-    .column-content {
-        /* background-color: #f9f9f9; */
-        vertical-align: top;
-    }
-</style>
+		.column-content {
+			/* background-color: #f9f9f9; */
+			vertical-align: top;
+		}
+
+		.container {
+			max-width: 1500px;
+			/* width: 100vw; */
+			background-image: url('./images/dark.jpg');
+			background-size: cover;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		.intro-section {
+			display: flex;
+			margin-bottom: 50px;
+			margin-left: 30px;
+			margin-top: 0px;
+			padding: 10px;
+			border-bottom: 1px solid gray;
+		}
+
+		.intro-section img {
+			border-radius: 70%;
+			margin-top: 80px;
+			margin-left: 50px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.skill_container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.skill_box {
+			background-color: rgba(255, 255, 255, 0.134);
+			flex: 0 0 48%;
+			height: 300px;
+			margin-bottom: 20px;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			line-height: 35px;
+		}
 	</style>
 </head>
 
 <body class="is-preload">
 
-	<!-- Header -->
-	<section id="header" style="background-image: url(./images/hacker.jpg);">
+	<!-- Main page -->
+	<section id="header" style="background-image: url(./images/hacker.jpg); padding: 3em 0 6em 0;">
+
+		<!-- navigation bar -->
+		<header class="nav_bar">
+			<div style="height: 40px; text-align: center;">
+				<a href="#about_me">About</a>
+				<a href="#Edu&Skills">Education & Skills</a>
+				<a href="#Intern&Projects">Internship & Projects</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</header>
 		<div class="inner">
-			<!-- <span class="icon solid major fa-cloud"></span> -->
 			<img src="./images/bolt2.gif">
-			<h1>Hi, I'm <strong>Xu (Charles) Cai.</strong></h1>
-			<p style="font-family: 'Times New Roman', Times, serif; color: whitesmoke; font-size: 20px;">
-				I am driven by the belief that the intersection of technology and digital innovation holds the key to
-				<br> solving contemporary issues, and enhancing convenience for everyone. I am eager to leverage my
-				expertise
-				<br> in Computer Science as a powerful tool to contribute to meaningful advancements.
+			<h1 style="font-size: 3.5rem; margin: 1em;">Hi, I'm <strong>Xu (Charles) Cai.</strong></h1>
+			<p style="font-family: 'Times New Roman', Times, serif; color: whitesmoke; font-size: 25px; margin: 2em;">
+				Driven by the belief that technology and digital innovation solve challenges and enhance
+				convenience.<br>
+				Eager to leverage my expertise in Computer Science as a powerful tool to contribute to meaningful
+				advancements.
 			</p>
 			<ul class="actions special">
-				<li><a href="#one" class="button scrolly">Discover</a></li>
+				<li style="padding: 90px 0 0 1em; font-size: 20px;"><a href="#about_me"
+						class="button scrolly">Discover</a>
+				</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- <div class="sidebar nav nav-underline">
-		<div class="section">Section 1</div>
-		<div class="section">Section 2</div>
-		<div class="section">Section 3</div>
-	  </div> -->
+	<!-- Introduction -->
+	<div class="container">
+		<section class="intro-section" id="about_me">
+			<!-- Profile picture -->
+			<br><br>
+			<div><img src="./images/me.jpg" alt="Profile Picture" width="180" height="180"></div>
 
-
-	<!-- One -->
-	<section id="one" class="main style1"
-		style="background-image: url(./images/dark.jpg); background-size: cover;">
-		<div class="container">
-			<div class="row gtr-150">
+			<!-- Introduction message -->
+			<div style="margin-left: 150px;">
+				<br><br>
+				<h1 style="font-size: 47px;"><i><strong style="color: white;" class="subtitle">Get to Know
+							Me</strong></i></h1><br>
 				<div>
-					<header class="major">
-						<h2><strong style="color: white;">My Journey</strong><br></h2>
-					</header>
-					<p
-						style="color: rgba(245, 245, 245, 0.801); font-size: 17px;">
+					<p style="color: rgba(245, 245, 245, 0.801); font-size: 18px;" class="body_text">
 						Hi, I'm Charles, a junior at Brandeis University majoring in Computer Science and Applied Math.
 						My academic journey honed my analytical skills through Applied Math, while CS has sharpened my
-						problem-solving abilities.</p>
-					<p
-						style="color: rgba(245, 245, 245, 0.801); font-size: 17px;">
+						problem-solving abilities. My involvement in full-stack app development, stemming from
+						internship and group projects , has not only deepened my understanding of programming techniques
+						but also enhanced my interpersonal skills and teamwork abilities. I am eager to leverage my
+						expertise in Computer Science as a powerful tool to contribute to meaningful advancements.</p>
+					<br>
+					<p style="color: rgba(245, 245, 245, 0.801); font-size: 18px;" class="body_text">
 						In the midst of all the tech and math, music is always my pillar of spirit. Whether I'm delving
-						into R&B, pop, or rap music, it's my go-to way to reinvigorate and ease stress. I'm a huge fan of
-						soccer and basketball. My loyalty lies with Barcelona and Warriors. If you share any of these passions,
-						don't hesitate to reach out—I always enjoy a good conversation!</p>
-				</div>
-				<div>
-					<span><img src="images/mejpg" alt="" /></span>
+						into R&B, pop, or rap music, it's my go-to way to reinvigorate and ease stress. I'm a huge fan
+						of soccer and basketball. My loyalty lies with Barcelona and Warriors. If you share any of these
+						passions, don't hesitate to reach out—I always enjoy a good conversation!</p>
 				</div>
 
-				<table class="resume-table">
-					<tr> <h2><strong style="color: white; position: left;">Education</strong><br></h2>
-						<th colspan="2" class="column-header">Education</th>
-						<th colspan="2" class="column-header">Relevant Courses</th>
-					</tr>
-					<tr>
-						<td colspan="2" class="column-content" style="color: grey;">
-							<img src="./images/brandeis.jpg" width="30px">Brandeis University<br>
-							<ul>
-								<li>Aug 2021 - May 2025<br></li>
-								<li>B.S. in Computer Science<br></li>
-								<li>B.S. in Applied Mathematics<br></li>
-								<li>GPA: 3.85</li>
-								<li>Dean's list for all semesters</li>
-								<br>
-								Relevant courses: 
-							
-							</ul>
-						</td>
-						<td colspan="2" class="column-content" style="color: grey;">
-							
-						</td>
-					</tr>
-				</table>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- Two -->
-	<section id="two" class="main style2">
-		<div class="container">
-			<div class="row gtr-150">
-				<div class="col-6 col-12-medium">
-					<ul class="major-icons">
-						<li><span class="icon solid style1 major fa-code"></span></li>
-						<li><span class="icon solid style2 major fa-bolt"></span></li>
-						<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-						<li><span class="icon solid style4 major fa-cog"></span></li>
-						<li><span class="icon solid style5 major fa-desktop"></span></li>
-						<li><span class="icon solid style6 major fa-calendar"></span></li>
-					</ul>
+		<!-- Education -->
+		<div style="width: 100%; height: 60px;" id="Edu&Skills"></div>
+		<section class="info-section" style="color: white; display: flex; align-items: stretch; margin-bottom: 65px;">
+
+			<div class="subheader" style="width: 30%;">
+				<h1><i><strong style="color: white; margin-left: 100px" ; class="subtitle">Education</strong></i></h1>
+				<br>
+			</div>
+			<div class="education" style="width: 70%; margin-left: 20px;">
+				<div><img src=" ./images/brandeis.jpg" width="80px"">
+					<strong class=" subtitle" style="font-size: 28px; color: rgba(245, 245, 245, 0.801);">&nbsp;Brandeis
+					University</strong>
+					<p style="text-align: right; margin-top: -50px;"><i
+							style="font-family: 'Times New Roman', Times, serif; font-size: 18px; padding-right: 10px;"></i>
+					</p>
+				</div><br><br>
+				<div class="subtitle"
+					style="font-size: 20px; width: 100%; display: flex; justify-content: space-between;">
+					<span><strong style="font-size: 20px; color: white;"><i>B.S. in Computer Science & B.S. in Applied
+								Mathematics</i></strong></span>
+					<span>
+						<i> Aug 2021 - May 2025
+						</i>
+					</span>
 				</div>
-				<div class="col-6 col-12-medium">
-					<header class="major">
-						<h2>Lorem ipsum dolor adipiscing<br />
-							amet dolor consequat</h2>
-					</header>
-					<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl
-						amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-						Adipiscing id accumsan adipiscing ipsum.</p>
-					<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc
-						phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit
-						varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col
-						faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-						curae consequat feugiat etiam dolore.</p>
-					<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl
-						amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-						Adipiscing id accumsan adipiscing ipsum.</p>
+
+				<div style="font-size: 20px;">
+
+					<p class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.801)">
+						<br> Dean's list for all semesters <br> GPA: 3.85 <br>
+						Relevant Courses:
+					<ul class="body_text" style="color: rgba(245, 245, 245, 0.801)">
+						<li><strong style="color: white;">CS</strong>: Software Developments, Data
+							Structures & Algorithms,
+							Machine Learning with Big Data,
+							Java OOP, Python, Operating Systems, Computer Security
+						</li>
+						<li><strong style="color: white;">Math</strong>: Linear Algebra, Calculus
+							I-III, Differential Equations, Probability, Proof Techniques
+						</li>
+					</ul>
+					</p>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- Three -->
-	<section id="three" class="main style1 special">
-		<div class="container">
-			<header class="major">
-				<h2>Adipiscing amet consequat</h2>
-			</header>
-			<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-			<div class="row gtr-150">
-				<div class="col-4 col-12-medium">
-					<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-					<h3>Magna feugiat lorem</h3>
-					<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed
-						volutpat et nascetur.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">More</a></li>
-					</ul>
+		<!-- Skills section -->
+		<section class="info-section" style="color: white; display: flex; align-items: stretch;">
+
+			<div class="subheader" style="width: 30%;">
+				<h1><i><strong style="color: white; margin-left: 100px" ; class="subtitle">Skills</strong></i></h1>
+				<br>
+			</div>
+			<div class="education" style="width: 70%; margin-left: 20px;">
+
+				<div class="skill_container" style="color: rgba(245, 245, 245, 0.801)">
+					<div class="skill_box"> <img src="./images/programming.png">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
+							style="font-size: 25px;">Programming Language</strong><br><br>
+						<ul class="body_text">
+							<li>Python</li>
+							<li>Java</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+						</ul>
+					</div>
+					<div class=" skill_box"><img src="./images/web-development.png">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
+							style="font-size: 25px;">Full-Stack</strong><br><br>
+						<ul class="body_text">
+							<li><strong style="color: white;">Front-end</strong>: HTML, CSS (Tailwind CSS, Bootstrap),
+								flask</li><br>
+							<li><strong style="color: white;">Frameworks</strong>: Express.js, React, Vue, Next.js
+							</li>
+						</ul>
+					</div>
+					<div class="skill_box"><img src="./images/database.png">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
+							style="font-size: 25px;">Database</strong><br><br>
+						<ul class="body_text">
+							<li>MySQL</li>
+							<li>PostgreSQL</li>
+							<li>SQLite</li>
+							<li>MongoDB</li>
+						</ul>
+					</div>
+					<div class="skill_box"><img src="./images/data-processing.png">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle" style="font-size: 24px;">Machine
+							Learning & Data Analysis</strong><br><br>
+						<ul class="body_text">
+							<li><strong style="color: white;">ML framwork</strong>: Scikit-learn, PyTorch</li><br>
+							<li><strong style="color: white;">Data</strong>: NumPy, Pandas, Matplotlib</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-4 col-12-medium">
-					<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
-					<h3>Magna feugiat lorem</h3>
-					<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed
-						volutpat et nascetur.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">More</a></li>
-					</ul>
+			</div>
+		</section>
+	</div>
+
+	<!-- Projects & Experiences -->
+	<section class="info-section" style="color: white; align-items: stretch; background-image:
+	url(./images/star.jpg); padding-top: 65px; background-size: cover;" id="Intern&Projects">
+
+		<!-- Internships -->
+		<div class="subheader">
+			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px" ;
+						class="subtitle">Internship</strong></i></h1>
+			<br>
+
+			<!-- DONGE Intern -->
+			<div class="project-container">
+				<div class="project-image">
+					<a class="project-image-a" href="https://github.com/XuCai021130/OrderSchedulingApp"
+						target="_blank"><img src="./images/donge.jpeg" alt="Project Screenshot"></a>
 				</div>
-				<div class="col-4 col-12-medium">
-					<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-					<h3>Magna feugiat lorem</h3>
-					<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed
-						volutpat et nascetur.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">More</a></li>
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">
+						DONGE Electric Appliance Group Co., Ltd. Intern
+					</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+						<span><i>Software Engineer</i></span>
+						<span>
+							<i>June 2023 - July 2023
+							</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<li>Collaborately implemented a customer order scheduling & dispatching tool using Vue.js &
+							MySQL. Coordinated with the Home Decoration team for
+							generating requirements and gathering feedback for the tool and significantly increased
+							their throughput
+						</li>
+						<li>
+							Spearheaded the data importing and managing effort from hundreds of financial reports
+							utilizing SQL, optimizing database query filtering methods to enhance
+							performance
+						</li>
+						<li>
+							Conducted a training session introducing code management platforms Gitee and Github.
+							Performed live demonstrations for a comprehensive overview of platform operations and
+							guided effective exploration and utilization of open-source projects.
+						</li>
 					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Vue.js, MySQL, SQL
+					</h6>
+				</div>
+			</div>
+
+			<!-- EazyLetter Intern -->
+			<div class="project-container">
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">EazyLetter</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+						<span><i>Software Engineer</i></span>
+						<span>
+							<i>
+								Jan 2024 - Present
+							</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2;">
+						<li>Currently directing a team of four students in completing the database and home page
+							sections of EazyLetter's web app, focusing on ensuring tasks are delivered satisfactorily
+							and efficiently
+						</li>
+						<li>
+							Implemented Drizzle ORM schema to create a relational database for storing all user
+							information, resumes, & cover letter drafts
+						</li>
+						<li>
+							Designed the home page of EazyLetter's main website utilizing HTML with tailwind CSS to do
+							styling under the react.js framework
+						</li>
+					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Next.js, TypeScript, Tailwind
+						CSS, React, Drizzle ORM
+					</h6>
+				</div>
+				<div class="project-image">
+					<a style="height: 100%; width: 100%;" href="https://github.com/EazyLetterAI/EazyLetter"
+						target="_blank">
+						<div
+							style="margin: auto; background-image: url(./images/eazyletter.jpg); width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%;">
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Project & Related Experiences -->
+		<div class="subheader">
+			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px" ;
+						class="subtitle">Projects & Relevant Experiences</strong></i></h1><br>
+
+			<!-- TAMID -->
+			<div class="project-container">
+				<div class="project-image">
+					<a class="project-image-a" href="https://tamidgroup.org/" target="_blank"><img
+							src="./images/tamid.jpeg" alt="Project Screenshot"></a>
+				</div>
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">
+						Brandeis TAMID Group
+					</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+						<span><i>Technical Consulting</i></span>
+						<span>
+							<i>Sep 2022 - Present</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<li> Customized the GPT-4 model to develop an advanced skill&learning resources based career
+							development consulting system for startup InBe. Processed generated responses to deliver
+							structured & regulated content to users
+						</li>
+						<li>
+							Achieved 5-star ratings from clients by exceeding expectations and delivering high-quality
+							work
+						</li>
+					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Python, OpenAI API, Flask,
+						Trello (work management tool)
+					</h6>
+				</div>
+			</div>
+
+			<!-- Transaction app -->
+			<div class="project-container">
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">Personal Significant Transactions Tracker with
+						Interactive CAPTCHAs</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+						<span><i>Software Engineer</i></span>
+						<span>
+							<i>
+								Jan 2024 - Present
+							</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2;">
+						<li>Self-developed full-stack web-based Transaction Tracker App, using Express.js as framework.
+							Main featuresinclude CRUD operations, data aggregation, data visualization
+						</li>
+						<li>
+							Enhanced user data protection by developing interactive CAPTCHAs using JavaScript & Python
+							to streamline user verification processes
+						</li>
+					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Express.js, HTML, CSS, Mongo
+						DB, JavaScript
+					</h6>
+				</div>
+				<div class="project-image">
+					<img src="./images/private-transaction-app.webp" alt="Project Screenshot">
+				</div>
+			</div>
+
+			<!-- Brandeis UTA -->
+			<div class="project-container">
+				<div class="project-image" style="height: auto;">
+					<a class="project-image-a" href="https://replit.com/@CharlesCai4" target="_blank"><img
+							src="./images/Brandeis_University_seal.svg.png" alt="Project Screenshot"></a>
+				</div>
+
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">
+						Teaching Assistant for Python Programming Course
+					</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+						<span><i>Brandeis Undergraduate Teaching Assistant</i></span>
+						<span>
+							<i>Aug 2023 - Dec 2023</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<li> Collaborated with professor to devise rigorous Python pytest cases to evaluate student code
+							effectively
+						</li>
+						<li>
+							Tested assigned problems before distribution to gauge their difficulty and ensure the
+							workload was manageable for students. Identified and reported technical
+							issues to professors, providing constructive feedback for the refinement of assignment
+							projects to ensure they
+						</li>
+						<li>
+							Achieved over 4.5/5 mean rating score from students, with top ratings in technical ability &
+							clarity on TA course evaluation
+						</li>
+						<li>Led weekly recitation. Hold Office Hour twice a week answering students' concerns.. Graded
+							over 200 quizzes and over 400 programming assignments</li>
+					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Python, Pytest, Replit
+						(Online IDE), Goodle Doc
+					</h6>
+				</div>
+			</div>
+
+			<!-- ML Research Assistant-->
+			<div class="project-container" style="margin-bottom: 0px;">
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">Brandeis Machine Learning Research Lab</strong>
+					<br><br>
+					<div class="subtitle"
+						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+						<span><i>Research Assistant</i></span>
+						<span>
+							<i>
+								Oct 2023 - Present
+							</i>
+						</span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2;">
+						<li> Supported a PhD candidate by leveraging NumPy and Pandasfor data aggregation and
+							visualization, examining data omissionsin ARDS patient datasets.
+							Discovered consistent absence patterns across parameters, and designing strategies for
+							managing missing data
+						</li>
+						<li>
+							Analyzed scholarly articles to pinpoint essential parameters in relevance to detect ARDS
+							patients. Assembled all key parameters and formulate a new, concise
+							version of dataset extracted from MIMIC-IV
+						</li>
+					</ul>
+					<h6 class="body_text"
+						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;NumPy, Pandas, Relational
+						Database, Jupyter Notebook
+					</h6>
+				</div>
+				<div class="project-image">
+					<img src="./images/machine-learning.png" alt="Project Screenshot">
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- Four -->
-	<section id="four" class="main style2 special">
-		<div class="container">
-			<header class="major">
-				<h2>Ipsum feugiat consequat?</h2>
-			</header>
-			<p>Sed lacus nascetur ac ante amet sapien.</p>
-			<ul class="actions special">
-				<li><a href="#" class="button wide primary">Sign Up</a></li>
-				<li><a href="#" class="button wide">Learn More</a></li>
+		<!-- Contact -->
+		<div style="border-top: 1px solid rgba(255, 255, 255, 0.705); padding: 50px; display: flex; align-items: center; margin-top: 50px;"
+			id="contact">
+			<img src="./images/communicate.png" style="margin-right: 40px; ">
+			<div
+				style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-left: 40px;">
+				<h1 style="color: white; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+					<i>Get in Touch</i>
+				</h1><br><br>
+				<h5 style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+					I'd love to hear from you! Feel free to reach out to me through any of the following channels.</h5>
+			</div>
+		</div>
+
+		<div class="body_text" style="font-size: 20px;">
+
+			<ul style="list-style-type: none;">
+				<li>
+					<h3><i><strong class="subtitle"
+								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Emails</strong></i></h3>
+					<ul style="list-style-type: none;">
+						<li>
+							<p>School: xucai@brandeis.edu</p>
+						</li>
+						<li>
+							<p>Personal: xucai7140@gmail.com</p>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<h3><i><strong class="subtitle"
+								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Phone</strong></i></h3>
+
+					<ul style="list-style-type: none;">
+						<li>
+							<p>(+1) 781-472-9756</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3><i><strong class="subtitle"
+								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Social
+								Medias</strong></i></h3>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/xu-cai-30a698244/" class="icon brands alt fa-linkedin"
+								target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/XuCai021130" class="icon brands alt fa-github"
+								target="_blank"><span class="label">GitHub</span></a></li>
+
+				</li>
+			</ul>
+			</li>
 			</ul>
 		</div>
+		<!-- Copy Right -->
+		<div style="text-align: center;">
+			<ul class="copyright">
+				<li style="font-size: 18px; color: gray;">Copyright &copy; Xu Cai 2024</li>
+			</ul>
+		</div>
+
 	</section>
 
-	<!-- Five -->
-	<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
 
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
-
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button primary">Primary</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button large">Large</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button primary fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button primary disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<select name="demo-category" id="demo-category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="col-12">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
-
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
-
-				</div>
-			</section>
-		-->
-
-	<!-- Footer -->
-	<section id="footer">
-		<ul class="icons">
-			<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Untitled</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
-	</section>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
