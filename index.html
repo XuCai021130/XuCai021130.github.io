@@ -167,6 +167,34 @@
 			box-sizing: border-box;
 			line-height: 35px;
 		}
+
+		.brighter {
+			color: #ffff99bf;
+			/* dark yellow */
+			/* color: #f0f0f0;    */
+		}
+
+		.tech_container {
+			display: flex;
+			align-items: center;
+			/* Center vertically */
+		}
+
+		.tool_image {
+			width: 15%;
+			display: flex;
+			justify-content: center;
+			/* Center horizontally */
+		}
+
+		.tool_image img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.skillset_text {
+			width: 70%;
+		}
 	</style>
 </head>
 
@@ -194,8 +222,7 @@
 				advancements.
 			</p>
 			<ul class="actions special">
-				<li style="padding: 90px 0 0 1em; font-size: 20px;"><a href="#about_me"
-						class="button scrolly">Discover</a>
+				<li style="padding: 90px 0 0 1em; font-size: 20px;"><a href="#about_me" class="button scrolly">Discover</a>
 				</li>
 			</ul>
 		</div>
@@ -248,8 +275,7 @@
 							style="font-family: 'Times New Roman', Times, serif; font-size: 18px; padding-right: 10px;"></i>
 					</p>
 				</div><br><br>
-				<div class="subtitle"
-					style="font-size: 20px; width: 100%; display: flex; justify-content: space-between;">
+				<div class="subtitle" style="font-size: 20px; width: 100%; display: flex; justify-content: space-between;">
 					<span><strong style="font-size: 20px; color: white;"><i>B.S. in Computer Science & B.S. in Applied
 								Mathematics</i></strong></span>
 					<span>
@@ -261,7 +287,7 @@
 				<div style="font-size: 20px;">
 
 					<p class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.801)">
-						<br> Dean's list for all semesters <br> GPA: 3.85 <br>
+						<br> Dean's list for all semesters <br> GPA: 3.86 <br>
 						Relevant Courses:
 					<ul class="body_text" style="color: rgba(245, 245, 245, 0.801)">
 						<li><strong style="color: white;">CS</strong>: Software Developments, Data
@@ -286,11 +312,10 @@
 				<br>
 			</div>
 			<div class="education" style="width: 70%; margin-left: 20px;">
-
 				<div class="skill_container" style="color: rgba(245, 245, 245, 0.801)">
 					<div class="skill_box"> <img src="./images/programming.png">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
-							style="font-size: 25px;">Programming Language</strong><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle" style="font-size: 25px;">Programming
+							Language</strong><br><br>
 						<ul class="body_text">
 							<li>Python</li>
 							<li>Java</li>
@@ -336,16 +361,116 @@
 	url(./images/star.jpg); padding-top: 65px; background-size: cover;" id="Intern&Projects">
 
 		<!-- Internships -->
+
 		<div class="subheader">
 			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px" ;
-						class="subtitle">Internship</strong></i></h1>
-			<br>
+						class="subtitle">Internship</strong></i></h1><br>
+
+			<!-- Pitch Labs Intern -->
+			<div class="project-container">
+
+				<div class="project-image">
+					<a style="height: 100%; width: 100%;" target="_blank">
+						<div
+							style="margin: auto; width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%; align-items: center; justify-content: center;">
+							<img src="./images/pitchlabs_logo.jpg" style="width: 85%; height: 85%;">
+						</div>
+
+					</a>
+				</div>
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">Pitch Labs</strong>
+					<br><br>
+					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+						<span><i>Full Stack Engineer</i></span>
+						<span><i>Jun 2024 - Present</i></span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2;">
+						<li>Enhanced user engagement by overhauling the <strong class="brighter">Contact Us</strong> page to create
+							a user-friendly interface for submitting feedback or joining our Discord server. Integrated the submission
+							form with <strong class="brighter">Strapi</strong> in the backend, ensuring secure transmission of
+							invaluable inputs. Contributed to growing the company's Discord community to over <strong
+								class="brighter">1,100</strong> members
+						</li>
+						<li>
+							Revamped the <strong class="brighter">About Us</strong> page of the main website in collaboration with
+							UX/UI designers and tech engineers, effectively showcasing our core values and achievements. This improved
+							presentation attracted over <strong class="brighter">10,000</strong> visitors from <strong
+								class="brighter">35+</strong> countries
+						</li>
+						<li>
+							Designed and developed those web components using <strong class="brighter">React</strong>, <strong
+								class="brighter">HTML</strong>, and <strong class="brighter">Tailwind CSS</strong> , ensuring responsive
+							and visually appealing user interfaces. Utilized <strong class="brighter">Next.js</strong> for server-side
+							rendering and seamless integration with the backend. Ensured the app's compatibility across web and mobile
+							devices for optimal user experience
+						</li>
+					</ul>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Next.js, TypeScript, Tailwind CSS, HTML, Strapi, Github, Figma, Planka Card
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- EazyLetter Intern -->
+			<div class="project-container">
+				<div class="project-description">
+					<strong style="font-size: 30px; color: white;">EazyLetter</strong>
+					<br><br>
+					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+						<span><i>Technical Project Manager</i></span>
+						<span><i>Jan 2024 - May 2024</i></span>
+					</div><br>
+					<ul class="body_text" style="line-height: 2;">
+						<li>Directing a team of five student engineers in completing the database and web page
+							part of EazyLetter's web app under <strong class="brighter">Next.js</strong>, focusing on ensuring tasks
+							are delivered satisfactorily and efficiently
+						</li>
+						<li>
+							Implemented <strong class="brighter">Drizzle ORM</strong> schema to create a relational database in
+							<strong class="brighter">MySQL</strong> for storing all user information, resumes, & cover letter drafts
+						</li>
+						<li>
+							Designed the home page of EazyLetter's main website utilizing <strong class="brighter">HTML</strong> with
+							<strong class="brighter">tailwind CSS</strong> to do styling under the <strong
+								class="brighter">React</strong> framework
+						</li>
+						<li>
+							Utilized Uploadthing to do files hosting. Build APIs to allow users upload their resume and
+							cover letter
+						</li>
+					</ul>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Next.js, TypeScript, Tailwind CSS, React, Drizzle ORM, Uploadthing (doc uploading
+							platform), MySQL
+						</div>
+					</div>
+				</div>
+				<div class="project-image">
+					<a style="height: 100%; width: 100%;" href="https://github.com/EazyLetterAI/EazyLetter" target="_blank">
+						<div
+							style="margin: auto; background-image: url(./images/eazyletter.jpg); width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%;">
+						</div>
+					</a>
+				</div>
+			</div>
 
 			<!-- DONGE Intern -->
 			<div class="project-container">
 				<div class="project-image">
-					<a class="project-image-a" href="https://github.com/XuCai021130/OrderSchedulingApp"
-						target="_blank"><img src="./images/donge.jpeg" alt="Project Screenshot"></a>
+					<a class="project-image-a" href="https://github.com/XuCai021130/OrderSchedulingApp" target="_blank"><img
+							src="./images/donge.jpeg" alt="Project Screenshot"></a>
 				</div>
 				<div class="project-description">
 					<strong style="font-size: 30px; color: white;">
@@ -377,69 +502,30 @@
 							guided effective exploration and utilization of open-source projects.
 						</li>
 					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Vue.js, MySQL, SQL
-					</h6>
-				</div>
-			</div>
-
-			<!-- EazyLetter Intern -->
-			<div class="project-container">
-				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">EazyLetter</strong>
-					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
-						<span><i>Software Engineer</i></span>
-						<span>
-							<i>
-								Jan 2024 - Present
-							</i>
-						</span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2;">
-						<li>Currently directing a team of four students in completing the database and home page
-							sections of EazyLetter's web app, focusing on ensuring tasks are delivered satisfactorily
-							and efficiently
-						</li>
-						<li>
-							Implemented Drizzle ORM schema to create a relational database for storing all user
-							information, resumes, & cover letter drafts
-						</li>
-						<li>
-							Designed the home page of EazyLetter's main website utilizing HTML with tailwind CSS to do
-							styling under the react.js framework
-						</li>
-					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Next.js, TypeScript, Tailwind
-						CSS, React, Drizzle ORM
-					</h6>
-				</div>
-				<div class="project-image">
-					<a style="height: 100%; width: 100%;" href="https://github.com/EazyLetterAI/EazyLetter"
-						target="_blank">
-						<div
-							style="margin: auto; background-image: url(./images/eazyletter.jpg); width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%;">
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
 						</div>
-					</a>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Vue.js, javaScript, Github, HTML, MySQL, SQL
+						</div>
+					</div>
 				</div>
-
 			</div>
+
 		</div>
 
 		<!-- Project & Related Experiences -->
 		<div class="subheader">
-			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px" ;
-						class="subtitle">Projects & Relevant Experiences</strong></i></h1><br>
+			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px;" class="subtitle">Projects &
+						Relevant Experiences</strong></i></h1><br>
 
 			<!-- TAMID -->
 			<div class="project-container">
 				<div class="project-image">
-					<a class="project-image-a" href="https://tamidgroup.org/" target="_blank"><img
-							src="./images/tamid.jpeg" alt="Project Screenshot"></a>
+					<a class="project-image-a" href="https://tamidgroup.org/" target="_blank"><img src="./images/tamid.jpeg"
+							alt="Project Screenshot"></a>
 				</div>
 				<div class="project-description">
 					<strong style="font-size: 30px; color: white;">
@@ -463,11 +549,15 @@
 							work
 						</li>
 					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Python, OpenAI API, Flask,
-						Trello (work management tool)
-					</h6>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Python, API, Flask, Trello (work management tool)
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -477,14 +567,9 @@
 					<strong style="font-size: 30px; color: white;">Personal Significant Transactions Tracker with
 						Interactive CAPTCHAs</strong>
 					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
 						<span><i>Software Engineer</i></span>
-						<span>
-							<i>
-								Jan 2024 - Present
-							</i>
-						</span>
+						<span><i>Jan 2024 - Present</i></span>
 					</div><br>
 					<ul class="body_text" style="line-height: 2;">
 						<li>Self-developed full-stack web-based Transaction Tracker App, using Express.js as framework.
@@ -495,14 +580,20 @@
 							to streamline user verification processes
 						</li>
 					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Express.js, HTML, CSS, Mongo
-						DB, JavaScript
-					</h6>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Express.js, HTML, CSS, Mongo DB, JavaScript
+						</div>
+					</div>
 				</div>
 				<div class="project-image">
-					<img src="./images/private-transaction-app.webp" alt="Project Screenshot">
+					<a style="height: 100%; width: 100%;"
+						href="https://github.com/XuCai021130/Personal-Significant-Transactions-Tracker" target="_blank"><img
+							src="./images/private-transaction-app.webp" alt="Project Screenshot"></a>
 				</div>
 			</div>
 
@@ -542,11 +633,16 @@
 						<li>Led weekly recitation. Hold Office Hour twice a week answering students' concerns.. Graded
 							over 200 quizzes and over 400 programming assignments</li>
 					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;Python, Pytest, Replit
-						(Online IDE), Goodle Doc
-					</h6>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Python, Pytest, Replit (Online IDE), Goodle Word Doc (task recording & grading
+							guildline), Excel (grades tracking)
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -555,8 +651,7 @@
 				<div class="project-description">
 					<strong style="font-size: 30px; color: white;">Brandeis Machine Learning Research Lab</strong>
 					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
 						<span><i>Research Assistant</i></span>
 						<span>
 							<i>
@@ -576,11 +671,15 @@
 							version of dataset extracted from MIMIC-IV
 						</li>
 					</ul>
-					<h6 class="body_text"
-						style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-						<img src="./images/tool-box.png">&nbsp;&nbsp;Technology used:&nbsp;NumPy, Pandas, Relational
-						Database, Jupyter Notebook
-					</h6>
+					<div class="tech_container">
+						<div class="tool_image">
+							<img src="./images/tool-box.png">
+						</div>
+						<div class="skillset_text"
+							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+							Technology used:&nbsp;Python, NumPy, Pandas, Relational Database, Jupyter Notebook, Google Scholar
+						</div>
+					</div>
 				</div>
 				<div class="project-image">
 					<img src="./images/machine-learning.png" alt="Project Screenshot">
@@ -589,7 +688,8 @@
 		</div>
 
 		<!-- Contact -->
-		<div style="border-top: 1px solid rgba(255, 255, 255, 0.705); padding: 50px; display: flex; align-items: center; margin-top: 50px;"
+		<div
+			style="border-top: 1px solid rgba(255, 255, 255, 0.705); padding: 50px; display: flex; align-items: center; margin-top: 50px;"
 			id="contact">
 			<img src="./images/communicate.png" style="margin-right: 40px; ">
 			<div
@@ -629,14 +729,13 @@
 					</ul>
 				</li>
 				<li>
-					<h3><i><strong class="subtitle"
-								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Social
+					<h3><i><strong class="subtitle" style="font-size: 28px; margin-bottom: 30px; text-align: left;">Social
 								Medias</strong></i></h3>
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/xu-cai-30a698244/" class="icon brands alt fa-linkedin"
 								target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/XuCai021130" class="icon brands alt fa-github"
-								target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="https://github.com/XuCai021130" class="icon brands alt fa-github" target="_blank"><span
+									class="label">GitHub</span></a></li>
 
 				</li>
 			</ul>
