@@ -15,187 +15,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	<style>
-		.project-container {
-			display: flex;
-			align-items: center;
-			/* aligns the items vertically in the center */
-			margin-bottom: 100px;
-			width: 100%;
-		}
-
-		.project-image {
-			width: 40%;
-			/* Sets each div to occupy 50% of the project-container's width */
-			display: flex;
-			/* Applies flex layout to help with inner content alignment */
-			justify-content: center;
-			/* Centers the content horizontally */
-			align-items: center;
-			/* Centers the content vertically */
-			text-align: center;
-		}
-
-		.project-image img {
-			/* height: 80%; */
-			/* width: 80%; */
-			max-width: 80%;
-			/* object-fit: cover; */
-			/* This will cover the div's area, possibly cropping the image */
-			display: block;
-			margin: 0 auto;
-		}
-
-		.project-image-a {
-			display: inline-block;
-			/* Makes the link behave more like an image */
-		}
-
-		.project-description {
-			flex-grow: 1;
-			width: 60%;
-			margin-left: 20px;
-		}
-
-		.nav_bar {
-			height: 50px;
-			/* background-color: grey; */
-			background-image: url(./images/blue.jpg);
-			opacity: 0.85;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: 1000;
-		}
-
-		.nav_bar a {
-			font-size: 16px;
-			font-weight: bold;
-			width: 250px;
-			/* height: 40px; */
-			display: inline-block;
-			color: white;
-			text-decoration: none;
-			text-align: center;
-			line-height: 50px;
-			transition: background-color 0.7s ease, transform 0.3s ease;
-		}
-
-		.nav_bar a:hover {
-			color: #ffee10;
-			box-shadow: 0 0 5px #ffee10;
-			text-shadow: 0 0 5px #ffee10;
-			background-color: grey;
-			transform: scale(1.1);
-		}
-
-		.subtitle {
-			color: white;
-			font-family: 'Times New Roman', Times, serif;
-		}
-
-		.body_text {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 19px;
-			line-height: 2;
-			color: rgba(245, 245, 245, 0.801)
-		}
-
-		.section {
-			margin-bottom: 20px;
-			/* Space between sections */
-			background: #ffffff;
-			/* Background color of sections */
-			padding: 10px;
-			/* Padding inside sections */
-			border-radius: 5px;
-			/* Optional: rounds the corners of the section */
-		}
-
-		.column-header {
-			/* background-color: #555; */
-			color: white;
-			text-align: center;
-		}
-
-		.column-content {
-			/* background-color: #f9f9f9; */
-			vertical-align: top;
-		}
-
-		.container {
-			max-width: 1500px;
-			/* width: 100vw; */
-			background-image: url('./images/dark.jpg');
-			background-size: cover;
-			margin-left: 0px;
-			margin-right: 0px;
-		}
-
-		.intro-section {
-			display: flex;
-			margin-bottom: 50px;
-			margin-left: 30px;
-			margin-top: 0px;
-			padding: 10px;
-			border-bottom: 1px solid gray;
-		}
-
-		.intro-section img {
-			border-radius: 70%;
-			margin-top: 80px;
-			margin-left: 50px;
-		}
-
-		body {
-			margin: 0;
-			padding: 0;
-		}
-
-		.skill_container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-
-		.skill_box {
-			background-color: rgba(255, 255, 255, 0.134);
-			flex: 0 0 48%;
-			height: 300px;
-			margin-bottom: 20px;
-			border: 1px solid #000;
-			box-sizing: border-box;
-			line-height: 35px;
-		}
-
-		.brighter {
-			color: #ffff99bf;
-			/* dark yellow */
-			/* color: #f0f0f0;    */
-		}
-
-		.tech_container {
-			display: flex;
-			align-items: center;
-			/* Center vertically */
-		}
-
-		.tool_image {
-			width: 15%;
-			display: flex;
-			justify-content: center;
-			/* Center horizontally */
-		}
-
-		.tool_image img {
-			max-width: 100%;
-			height: auto;
-		}
-
-		.skillset_text {
-			width: 70%;
-		}
-	</style>
+	<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="is-preload">
@@ -486,14 +306,15 @@
 						</span>
 					</div><br>
 					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
-						<li>Collaborately implemented a customer order scheduling & dispatching tool using Vue.js &
-							MySQL. Coordinated with the Home Decoration team for
+						<li>Collaborately implemented a customer order scheduling & dispatching tool using <strong
+								class="brighter">Vue.js</strong> &
+							<strong class="brighter">MySQL</strong>. Coordinated with the Home Decoration team for
 							generating requirements and gathering feedback for the tool and significantly increased
 							their throughput
 						</li>
 						<li>
 							Spearheaded the data importing and managing effort from hundreds of financial reports
-							utilizing SQL, optimizing database query filtering methods to enhance
+							utilizing <strong class="brighter">SQL</strong>, optimizing database query filtering methods to enhance
 							performance
 						</li>
 						<li>
@@ -572,12 +393,13 @@
 						<span><i>Jan 2024 - Present</i></span>
 					</div><br>
 					<ul class="body_text" style="line-height: 2;">
-						<li>Self-developed full-stack web-based Transaction Tracker App, using Express.js as framework.
-							Main featuresinclude CRUD operations, data aggregation, data visualization
+						<li>•Developed a full-stack web-based Transaction Tracker App independently, utilizing <strong
+								class="brighter">Express.js</strong> as framework & MongoDB as database, featuring CRUD operations for
+							personal transactions, data aggregation, & data visualization through charts
 						</li>
 						<li>
-							Enhanced user data protection by developing interactive CAPTCHAs using JavaScript & Python
-							to streamline user verification processes
+							Enhanced user data protection by developing interactive <strong class="brighter">CAPTCHAs</strong> using
+							<strong class="brighter">JavaScript</strong> to streamline user verification processes
 						</li>
 					</ul>
 					<div class="tech_container">
@@ -617,8 +439,8 @@
 						</span>
 					</div><br>
 					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
-						<li> Collaborated with professor to devise rigorous Python pytest cases to evaluate student code
-							effectively
+						<li> Collaborated with professor to devise rigorous Python <strong class="brighter">pytest</strong> cases to
+							evaluate student code effectively
 						</li>
 						<li>
 							Tested assigned problems before distribution to gauge their difficulty and ensure the
@@ -627,11 +449,12 @@
 							projects to ensure they
 						</li>
 						<li>
-							Achieved over 4.5/5 mean rating score from students, with top ratings in technical ability &
-							clarity on TA course evaluation
+							Achieved over <strong class="brighter">4.5/5</strong> mean rating score from students, with top ratings in
+							technical ability & clarity on TA course evaluation
 						</li>
-						<li>Led weekly recitation. Hold Office Hour twice a week answering students' concerns.. Graded
-							over 200 quizzes and over 400 programming assignments</li>
+						<li>Led weekly recitation. Hold Office Hour twice a week answering students' concerns. Graded
+							over <strong class="brighter">200</strong> quizzes and over <strong class="brighter">400</strong>
+							programming assignments</li>
 					</ul>
 					<div class="tech_container">
 						<div class="tool_image">
@@ -649,7 +472,8 @@
 			<!-- ML Research Assistant-->
 			<div class="project-container" style="margin-bottom: 0px;">
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">Brandeis Machine Learning Research Lab</strong>
+					<strong style="font-size: 30px; color: white;">Professor Hong’s Machine Learning Research Group at
+						Brandeis</strong>
 					<br><br>
 					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
 						<span><i>Research Assistant</i></span>
@@ -660,9 +484,9 @@
 						</span>
 					</div><br>
 					<ul class="body_text" style="line-height: 2;">
-						<li> Supported a PhD candidate by leveraging NumPy and Pandasfor data aggregation and
-							visualization, examining data omissionsin ARDS patient datasets.
-							Discovered consistent absence patterns across parameters, and designing strategies for
+						<li> Supported a PhD by leveraging <strong class="brighter">NumPy</strong> and <strong
+								class="brighter">Pandas</strong> for data aggregation and visualization, examining data omissionsin ARDS
+							patient datasets. Discovered consistent absence patterns across parameters, and designing strategies for
 							managing missing data
 						</li>
 						<li>
