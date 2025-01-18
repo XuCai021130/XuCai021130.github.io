@@ -1,75 +1,74 @@
 <!DOCTYPE HTML>
-
-<html>
+<html lang="en">
 
 <head>
 	<title>Xu Cai</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<link rel="stylesheet" href="./styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<script src="https://kit.fontawesome.com/29e989e31e.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="is-preload">
-
+<body>
 	<!-- Main page -->
-	<section id="header" style="background-image: url(./images/hacker.jpg); padding: 3em 0 6em 0;">
-
-		<!-- navigation bar -->
-		<header class="nav_bar">
-			<div style="height: 40px; text-align: center;">
-				<a href="#about_me">About</a>
-				<a href="#Edu&Skills">Education & Skills</a>
-				<a href="#Intern&Projects">Internship & Projects</a>
-				<a href="#contact">Contact</a>
+	<section class="header-section">
+		<div>
+			<div class="nav-bar">
+				<nav>
+					<a href="#about-me">About</a>
+					<a href="#Edu&Skills">Education & Skills</a>
+					<a href="#Intern&Projects">Internship & Projects</a>
+					<a href="#contact">Contact</a>
+				</nav>
 			</div>
-		</header>
-		<div class="inner">
-			<img src="./images/bolt2.gif">
-			<h1 style="font-size: 3.5rem; margin: 1em;">Hi, I'm <strong>Xu (Charles) Cai.</strong></h1>
-			<p style="font-family: 'Times New Roman', Times, serif; color: whitesmoke; font-size: 25px; margin: 2em;">
-				Driven by the belief that technology and digital innovation solve challenges and enhance
-				convenience.<br>
-				Eager to leverage my expertise in Computer Science as a powerful tool to contribute to meaningful
-				advancements.
-			</p>
-			<ul class="actions special">
-				<li style="padding: 90px 0 0 1em; font-size: 20px;"><a href="#about_me" class="button scrolly">Discover</a>
-				</li>
-			</ul>
+
+			<!-- </header> -->
+			<div class="mission-statement">
+				<img src="./images/bolt2.gif" alt="">
+				<h1>Hi, I'm Xu (Charles) Cai.</h1>
+				<p>
+					I'm driven by the belief that technology and digital innovation solve challenges and enhance convenience.<br>
+					Eager to leverage my expertise in Computer Science as a powerful tool to contribute to meaningful
+					advancements.
+				</p>
+				<button>
+					<a href="#about-me">Discover</a>
+				</button>
+				<!-- <button>
+					<a href="#about-me">Resume</a>
+				</button> -->
+
+			</div>
 		</div>
+
+
 	</section>
 
 	<!-- Introduction -->
-	<div class="container">
-		<section class="intro-section" id="about_me">
+	<div class="self-intro">
+		<section class="intro-section" id="about-me">
 			<!-- Profile picture -->
-			<br><br>
-			<div><img src="./images/me.jpg" alt="Profile Picture" width="180" height="180"></div>
+			<div class="profile-picture">
+				<img src="./images/me.jpg" alt="Profile Picture">
+			</div>
 
 			<!-- Introduction message -->
-			<div style="margin-left: 150px;">
-				<br><br>
-				<h1 style="font-size: 47px;"><i><strong style="color: white;" class="subtitle">Get to Know
-							Me</strong></i></h1><br>
+			<div class="intro-text">
 				<div>
-					<p style="color: rgba(245, 245, 245, 0.801); font-size: 18px;" class="body_text">
+					<h1 style="font-size: 3rem; color: white; font-family: 'Times New Roman', Times, serif; margin-bottom: 3rem;">
+						<i><strong>Get to Know Me</strong></i>
+					</h1>
+				</div>
+
+				<div>
+					<p class="body-text">
 						Hi, I'm Charles, a junior at Brandeis University majoring in Computer Science and Applied Math.
 						My academic journey honed my analytical skills through Applied Math, while CS has sharpened my
 						problem-solving abilities. My involvement in full-stack app development, stemming from
-						internship and group projects , has not only deepened my understanding of programming techniques
+						internship and group projects, has not only deepened my understanding of programming techniques
 						but also enhanced my interpersonal skills and teamwork abilities. I am eager to leverage my
-						expertise in Computer Science as a powerful tool to contribute to meaningful advancements.</p>
-					<br>
-					<p style="color: rgba(245, 245, 245, 0.801); font-size: 18px;" class="body_text">
+						expertise in Computer Science as a powerful tool to contribute to meaningful advancements.</p><br>
+					<p class="body-text">
 						In the midst of all the tech and math, music is always my pillar of spirit. Whether I'm delving
 						into R&B, pop, or rap music, it's my go-to way to reinvigorate and ease stress. I'm a huge fan
 						of soccer and basketball. My loyalty lies with Barcelona and Warriors. If you share any of these
@@ -80,43 +79,45 @@
 		</section>
 
 		<!-- Education -->
-		<div style="width: 100%; height: 60px;" id="Edu&Skills"></div>
-		<section class="info-section" style="color: white; display: flex; align-items: stretch; margin-bottom: 65px;">
+		<div style="height: 2rem;" id="Edu&Skills"></div>
+		<section class="info-section" style="color: white; display: flex; align-items: stretch; margin-bottom: 5rem;">
 
-			<div class="subheader" style="width: 30%;">
-				<h1><i><strong style="color: white; margin-left: 100px" ; class="subtitle">Education</strong></i></h1>
-				<br>
+			<div style="width: 30%;">
+				<h1><i><strong class="section-title">Education</strong></i></h1>
 			</div>
-			<div class="education" style="width: 70%; margin-left: 20px;">
-				<div><img src=" ./images/brandeis.jpg" width="80px"">
-					<strong class=" subtitle" style="font-size: 28px; color: rgba(245, 245, 245, 0.801);">&nbsp;Brandeis
-					University</strong>
-					<p style="text-align: right; margin-top: -50px;"><i
-							style="font-family: 'Times New Roman', Times, serif; font-size: 18px; padding-right: 10px;"></i>
-					</p>
-				</div><br><br>
-				<div class="subtitle" style="font-size: 20px; width: 100%; display: flex; justify-content: space-between;">
-					<span><strong style="font-size: 20px; color: white;"><i>B.S. in Computer Science & B.S. in Applied
-								Mathematics</i></strong></span>
+
+			<div style="width: 70%; margin-left: 1rem;">
+
+				<div style="margin-bottom: 2rem; display: flex;">
+
+					<div>
+						<img src="./images/brandeis.jpg" alt="Brandeis University" width="50%">
+					</div>
+
+					<div class="school-title">
+						<h3><strong>Brandeis University</strong></h3>
+					</div>
+
+				</div>
+
+				<div class="role-and-date" style="margin-bottom: 2rem">
+					<i>B.S. in Computer Science & B.S. in Applied Mathematics</i>
 					<span>
-						<i> Aug 2021 - May 2025
-						</i>
+						<i> Aug 2021 - May 2025</i>
 					</span>
 				</div>
 
-				<div style="font-size: 20px;">
-
-					<p class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.801)">
-						<br> Dean's list for all semesters <br> GPA: 3.86 <br>
+				<div class="body-text">
+					<p>
+						Dean's list for all semesters <br> GPA: 3.86 <br>
 						Relevant Courses:
-					<ul class="body_text" style="color: rgba(245, 245, 245, 0.801)">
-						<li><strong style="color: white;">CS</strong>: Software Developments, Data
-							Structures & Algorithms,
-							Machine Learning with Big Data,
-							Java OOP, Python, Operating Systems, Computer Security
+					<ul class="body-text">
+						<li>
+							<p><strong style="color: white;">CS</strong>: Software Developments, Data Structures & Algorithms, Machine
+								Learning, Java OOP, Python, Operating Systems, Computer Security, Natural Language Processing</p>
 						</li>
 						<li><strong style="color: white;">Math</strong>: Linear Algebra, Calculus
-							I-III, Differential Equations, Probability, Proof Techniques
+							I-III, Differential Equations, Probability, Proof Techniques, Real Analysis
 						</li>
 					</ul>
 					</p>
@@ -127,85 +128,95 @@
 		<!-- Skills section -->
 		<section class="info-section" style="color: white; display: flex; align-items: stretch;">
 
-			<div class="subheader" style="width: 30%;">
-				<h1><i><strong style="color: white; margin-left: 100px" ; class="subtitle">Skills</strong></i></h1>
-				<br>
+			<div style="width: 30%;">
+				<h1><i><strong class="section-title">Skills</strong></i></h1>
 			</div>
-			<div class="education" style="width: 70%; margin-left: 20px;">
-				<div class="skill_container" style="color: rgba(245, 245, 245, 0.801)">
-					<div class="skill_box"> <img src="./images/programming.png">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle" style="font-size: 25px;">Programming
-							Language</strong><br><br>
-						<ul class="body_text">
+			<div style="width: 65%;">
+				<div class="skill-container">
+
+					<div class="skill-box">
+						<div class="icon-and-name">
+							<img src="./images/programming.png" alt="">
+							<div><strong>Programming Language</strong></div>
+						</div>
+						<ul class="body-text">
 							<li>Python</li>
 							<li>Java</li>
 							<li>JavaScript</li>
 							<li>TypeScript</li>
+							<li>Kotlin</li>
 						</ul>
 					</div>
-					<div class=" skill_box"><img src="./images/web-development.png">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
-							style="font-size: 25px;">Full-Stack</strong><br><br>
-						<ul class="body_text">
+
+					<div class="skill-box">
+						<div class="icon-and-name">
+							<img src="./images/web-development.png" alt="">
+							<div><strong>Full-Stack</strong></div>
+						</div>
+						<ul class="body-text">
 							<li><strong style="color: white;">Front-end</strong>: HTML, CSS (Tailwind CSS, Bootstrap),
 								flask</li><br>
 							<li><strong style="color: white;">Frameworks</strong>: Express.js, React, Vue, Next.js
 							</li>
 						</ul>
 					</div>
-					<div class="skill_box"><img src="./images/database.png">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle"
-							style="font-size: 25px;">Database</strong><br><br>
-						<ul class="body_text">
+
+					<div class="skill-box">
+						<div class="icon-and-name">
+							<img src="./images/database.png" alt="">
+							<div><strong>Database</strong></div>
+						</div>
+						<ul class="body-text">
 							<li>MySQL</li>
 							<li>PostgreSQL</li>
 							<li>SQLite</li>
 							<li>MongoDB</li>
 						</ul>
 					</div>
-					<div class="skill_box"><img src="./images/data-processing.png">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="subtitle" style="font-size: 24px;">Machine
-							Learning & Data Analysis</strong><br><br>
-						<ul class="body_text">
+
+					<div class="skill-box">
+						<div class="icon-and-name">
+							<img src="./images/data-processing.png" alt="">
+							<div><strong style="font-size: 1.5rem;">Machine Learning & Data</strong></div>
+						</div>
+						<ul class="body-text">
 							<li><strong style="color: white;">ML framwork</strong>: Scikit-learn, PyTorch</li><br>
-							<li><strong style="color: white;">Data</strong>: NumPy, Pandas, Matplotlib</li>
+							<li><strong style="color: white;">Data Analysis</strong>: NumPy, Pandas, Matplotlib</li>
 						</ul>
 					</div>
+
 				</div>
 			</div>
 		</section>
 	</div>
 
 	<!-- Projects & Experiences -->
-	<section class="info-section" style="color: white; align-items: stretch; background-image:
-	url(./images/star.jpg); padding-top: 65px; background-size: cover;" id="Intern&Projects">
+	<section class="experiences" id="Intern&Projects">
 
 		<!-- Internships -->
-
-		<div class="subheader">
-			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px" ;
-						class="subtitle">Internship</strong></i></h1><br>
+		<div>
+			<div style="margin-bottom: 4rem;">
+				<h1><i><strong class="section-title">Internship</strong></i></h1>
+			</div>
 
 			<!-- Pitch Labs Intern -->
 			<div class="project-container">
 
 				<div class="project-image">
-					<a style="height: 100%; width: 100%;" target="_blank">
-						<div
-							style="margin: auto; width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%; align-items: center; justify-content: center;">
-							<img src="./images/pitchlabs_logo.jpg" style="width: 85%; height: 85%;">
+					<a target="_blank">
+						<div class="project-image-background">
+							<img src="./images/PitchLabs_logo_white_background.png">
 						</div>
-
 					</a>
 				</div>
+
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">Pitch Labs</strong>
-					<br><br>
-					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="experience-name"> <strong>Pitch Labs</strong></div>
+					<div class="role-and-date">
 						<span><i>Full Stack Engineer</i></span>
 						<span><i>Jun 2024 - Present</i></span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2;">
+					</div>
+					<ul class="body-text">
 						<li>Enhanced user engagement by overhauling the <strong class="brighter">Contact Us</strong> page to create
 							a user-friendly interface for submitting feedback or joining our Discord server. Integrated the submission
 							form with <strong class="brighter">Strapi</strong> in the backend, ensuring secure transmission of
@@ -226,12 +237,11 @@
 							devices for optimal user experience
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<div class="skillset">
 							Technology used:&nbsp;Next.js, TypeScript, Tailwind CSS, HTML, Strapi, Github, Figma, Planka Card
 						</div>
 					</div>
@@ -241,13 +251,12 @@
 			<!-- EazyLetter Intern -->
 			<div class="project-container">
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">EazyLetter</strong>
-					<br><br>
-					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="experience-name"> <strong>EazyLetter</strong></div>
+					<div class="role-and-date">
 						<span><i>Technical Project Manager</i></span>
 						<span><i>Jan 2024 - May 2024</i></span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2;">
+					</div>
+					<ul class="body-text">
 						<li>Directing a team of five student engineers in completing the database and web page
 							part of EazyLetter's web app under <strong class="brighter">Next.js</strong>, focusing on ensuring tasks
 							are delivered satisfactorily and efficiently
@@ -266,19 +275,18 @@
 							cover letter
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<div class="skillset">
 							Technology used:&nbsp;Next.js, TypeScript, Tailwind CSS, React, Drizzle ORM, Uploadthing (doc uploading
 							platform), MySQL
 						</div>
 					</div>
 				</div>
 				<div class="project-image">
-					<a style="height: 100%; width: 100%;" href="https://github.com/EazyLetterAI/EazyLetter" target="_blank">
+					<a href="https://github.com/EazyLetterAI/EazyLetter" target="_blank">
 						<div
 							style="margin: auto; background-image: url(./images/eazyletter.jpg); width: 80%; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: auto; background-color: white; background-position: 50%;">
 						</div>
@@ -289,23 +297,20 @@
 			<!-- DONGE Intern -->
 			<div class="project-container">
 				<div class="project-image">
-					<a class="project-image-a" href="https://github.com/XuCai021130/OrderSchedulingApp" target="_blank"><img
-							src="./images/donge.jpeg" alt="Project Screenshot"></a>
+					<a href="https://github.com/XuCai021130/OrderSchedulingApp" target="_blank">
+						<img src="./images/donge.jpeg" alt="Project Screenshot"></a>
 				</div>
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">
-						DONGE Electric Appliance Group Co., Ltd. Intern
-					</strong>
-					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+					<div class="experience-name">
+						<strong>
+							DONGE Electric Appliance Group Co., Ltd. Intern
+						</strong>
+					</div>
+					<div class="role-and-date">
 						<span><i>Software Engineer</i></span>
-						<span>
-							<i>June 2023 - July 2023
-							</i>
-						</span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<span><i>June 2023 - July 2023</i></span>
+					</div>
+					<ul class="body-text">
 						<li>Collaborately implemented a customer order scheduling & dispatching tool using <strong
 								class="brighter">Vue.js</strong> &
 							<strong class="brighter">MySQL</strong>. Coordinated with the Home Decoration team for
@@ -323,13 +328,12 @@
 							guided effective exploration and utilization of open-source projects.
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-							Technology used:&nbsp;Vue.js, javaScript, Github, HTML, MySQL, SQL
+						<div class="skillset">
+							Technology used:&nbsp;Vue.js, JavaScript, Github, HTML, MySQL, SQL
 						</div>
 					</div>
 				</div>
@@ -338,45 +342,42 @@
 		</div>
 
 		<!-- Project & Related Experiences -->
-		<div class="subheader">
-			<h1 style="margin-bottom: 30px;"><i><strong style="color: white; margin-left: 100px;" class="subtitle">Projects &
-						Relevant Experiences</strong></i></h1><br>
+		<div>
+			<div style="margin-bottom: 4rem;">
+				<h1>
+					<i><strong class="section-title">Projects & Relevant Experiences</strong> </i>
+				</h1>
+			</div>
 
 			<!-- TAMID -->
 			<div class="project-container">
 				<div class="project-image">
-					<a class="project-image-a" href="https://tamidgroup.org/" target="_blank"><img src="./images/tamid.jpeg"
-							alt="Project Screenshot"></a>
+					<a href="https://tamidgroup.org/" target="_blank">
+						<img src="./images/tamid.jpeg" alt="Project Screenshot"></a>
 				</div>
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">
-						Brandeis TAMID Group
-					</strong>
-					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+					<div class="experience-name">
+						<strong>Brandeis TAMID Group</strong>
+					</div>
+					<div class="role-and-date">
 						<span><i>Technical Consulting</i></span>
-						<span>
-							<i>Sep 2022 - Present</i>
-						</span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<span><i>Sep 2022 - Present</i></span>
+					</div>
+					<ul class="body-text">
 						<li> Customized the GPT-4 model to develop an advanced skill&learning resources based career
 							development consulting system for startup InBe. Processed generated responses to deliver
 							structured & regulated content to users
 						</li>
 						<li>
-							Achieved 5-star ratings from clients by exceeding expectations and delivering high-quality
-							work
+							Achieved 5-star ratings from clients by exceeding expectations and delivering high-quality work
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-							Technology used:&nbsp;Python, API, Flask, Trello (work management tool)
+						<div class="skillset">
+							Technology used:&nbsp;Python, API, Flask, Trello
 						</div>
 					</div>
 				</div>
@@ -385,15 +386,15 @@
 			<!-- Transaction app -->
 			<div class="project-container">
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">Personal Significant Transactions Tracker with
-						Interactive CAPTCHAs</strong>
-					<br><br>
-					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="experience-name">
+						<strong>Personal Significant Transactions Tracker with Interactive CAPTCHAs</strong>
+					</div>
+					<div class="role-and-date">
 						<span><i>Software Engineer</i></span>
 						<span><i>Jan 2024 - Present</i></span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2;">
-						<li>•Developed a full-stack web-based Transaction Tracker App independently, utilizing <strong
+					</div>
+					<ul class="body-text">
+						<li>Developed a full-stack web-based Transaction Tracker App independently, utilizing <strong
 								class="brighter">Express.js</strong> as framework & MongoDB as database, featuring CRUD operations for
 							personal transactions, data aggregation, & data visualization through charts
 						</li>
@@ -402,43 +403,39 @@
 							<strong class="brighter">JavaScript</strong> to streamline user verification processes
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<div class="skillset">
 							Technology used:&nbsp;Express.js, HTML, CSS, Mongo DB, JavaScript
 						</div>
 					</div>
 				</div>
 				<div class="project-image">
-					<a style="height: 100%; width: 100%;"
-						href="https://github.com/XuCai021130/Personal-Significant-Transactions-Tracker" target="_blank"><img
-							src="./images/private-transaction-app.webp" alt="Project Screenshot"></a>
+					<a href="https://github.com/XuCai021130/Personal-Significant-Transactions-Tracker" target="_blank"><img
+							src="./images/private-transaction-app.webp" alt="Project Screenshot">
+					</a>
 				</div>
 			</div>
 
 			<!-- Brandeis UTA -->
 			<div class="project-container">
-				<div class="project-image" style="height: auto;">
-					<a class="project-image-a" href="https://replit.com/@CharlesCai4" target="_blank"><img
-							src="./images/Brandeis_University_seal.svg.png" alt="Project Screenshot"></a>
+				<div class="project-image">
+					<a href="https://replit.com/@CharlesCai4" target="_blank">
+						<img src="./images/Brandeis_University_seal.svg.png" alt="Project Screenshot">
+					</a>
 				</div>
 
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">
-						Teaching Assistant for Python Programming Course
-					</strong>
-					<br><br>
-					<div class="subtitle"
-						style="font-size: 20px; width: 100%; display: flex; justify-content: space-between; padding-right: 20px;">
+					<div class="experience-name">
+						<strong>Teaching Assistant for Python Programming Course</strong>
+					</div>
+					<div class="role-and-date">
 						<span><i>Brandeis Undergraduate Teaching Assistant</i></span>
-						<span>
-							<i>Aug 2023 - Dec 2023</i>
-						</span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2; color: rgba(245, 245, 245, 0.7);">
+						<span><i>Aug 2023 - Dec 2023</i></span>
+					</div>
+					<ul class="body-text">
 						<li> Collaborated with professor to devise rigorous Python <strong class="brighter">pytest</strong> cases to
 							evaluate student code effectively
 						</li>
@@ -456,12 +453,11 @@
 							over <strong class="brighter">200</strong> quizzes and over <strong class="brighter">400</strong>
 							programming assignments</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<div class="skillset">
 							Technology used:&nbsp;Python, Pytest, Replit (Online IDE), Goodle Word Doc (task recording & grading
 							guildline), Excel (grades tracking)
 						</div>
@@ -470,20 +466,16 @@
 			</div>
 
 			<!-- ML Research Assistant-->
-			<div class="project-container" style="margin-bottom: 0px;">
+			<div class="project-container">
 				<div class="project-description">
-					<strong style="font-size: 30px; color: white;">Professor Hong’s Machine Learning Research Group at
-						Brandeis</strong>
-					<br><br>
-					<div class="subtitle" style="font-size: 20px; width: 90%; display: flex; justify-content: space-between;">
+					<div class="experience-name">
+						<strong>Professor Hong’s Machine Learning Research Group atBrandeis</strong>
+					</div>
+					<div class="role-and-date">
 						<span><i>Research Assistant</i></span>
-						<span>
-							<i>
-								Oct 2023 - Present
-							</i>
-						</span>
-					</div><br>
-					<ul class="body_text" style="line-height: 2;">
+						<span><i>Oct 2023 - Present</i></span>
+					</div>
+					<ul class="body-text">
 						<li> Supported a PhD by leveraging <strong class="brighter">NumPy</strong> and <strong
 								class="brighter">Pandas</strong> for data aggregation and visualization, examining data omissionsin ARDS
 							patient datasets. Discovered consistent absence patterns across parameters, and designing strategies for
@@ -495,12 +487,11 @@
 							version of dataset extracted from MIMIC-IV
 						</li>
 					</ul>
-					<div class="tech_container">
-						<div class="tool_image">
+					<div class="tech-container">
+						<div class="tool-image">
 							<img src="./images/tool-box.png">
 						</div>
-						<div class="skillset_text"
-							style="font-size: 23px; color: #8ABAD3FF; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+						<div class="skillset">
 							Technology used:&nbsp;Python, NumPy, Pandas, Relational Database, Jupyter Notebook, Google Scholar
 						</div>
 					</div>
@@ -512,26 +503,20 @@
 		</div>
 
 		<!-- Contact -->
-		<div
-			style="border-top: 1px solid rgba(255, 255, 255, 0.705); padding: 50px; display: flex; align-items: center; margin-top: 50px;"
-			id="contact">
-			<img src="./images/communicate.png" style="margin-right: 40px; ">
-			<div
-				style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-left: 40px;">
-				<h1 style="color: white; font-family: 'Times New Roman', Times, serif; font-weight: bold;">
-					<i>Get in Touch</i>
-				</h1><br><br>
-				<h5 style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-					I'd love to hear from you! Feel free to reach out to me through any of the following channels.</h5>
+		<div class="get-in-touch" id="contact">
+			<img src="./images/communicate.png">
+			<div class="get-in-touch-text">
+				<h1><i><strong class="section-title">Get in Touch</strong></i></h1>
+				<h5>
+					I'd love to hear from you! Feel free to reach out through any of the following channels.</h5>
 			</div>
 		</div>
 
-		<div class="body_text" style="font-size: 20px;">
+		<div class="body-text">
 
 			<ul style="list-style-type: none;">
 				<li>
-					<h3><i><strong class="subtitle"
-								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Emails</strong></i></h3>
+					<h1><i><strong class="contact-keywords">Emails</strong></i></h1>
 					<ul style="list-style-type: none;">
 						<li>
 							<p>School: xucai@brandeis.edu</p>
@@ -543,8 +528,7 @@
 					</ul>
 				</li>
 				<li>
-					<h3><i><strong class="subtitle"
-								style="font-size: 28px; margin-bottom: 30px; text-align: left;">Phone</strong></i></h3>
+					<h1><i><strong class="contact-keywords">Phone</strong></i></h1>
 
 					<ul style="list-style-type: none;">
 						<li>
@@ -553,38 +537,28 @@
 					</ul>
 				</li>
 				<li>
-					<h3><i><strong class="subtitle" style="font-size: 28px; margin-bottom: 30px; text-align: left;">Social
-								Medias</strong></i></h3>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/xu-cai-30a698244/" class="icon brands alt fa-linkedin"
-								target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/XuCai021130" class="icon brands alt fa-github" target="_blank"><span
-									class="label">GitHub</span></a></li>
-
+					<h1><i><strong class="contact-keywords">Social Medias</strong></i></h1>
+					<ul class="social-medias">
+						<a href="https://www.linkedin.com/in/xu-cai-30a698244/" target="_blank">
+							<i class="fa-brands fa-linkedin fa-2xl" style="color: dimgray"></i>
+						</a>
+						<a href="https://github.com/XuCai021130" target="_blank">
+							<i class="fa-brands fa-github fa-2xl" style="color: dimgray"></i>
+						</a>
 				</li>
 			</ul>
 			</li>
 			</ul>
 		</div>
+
 		<!-- Copy Right -->
-		<div style="text-align: center;">
+		<footer class="footer-section">
 			<ul class="copyright">
-				<li style="font-size: 18px; color: gray;">Copyright &copy; Xu Cai 2024</li>
+				<li>Copyright &copy; Xu Cai 2025</li>
 			</ul>
-		</div>
+		</footer>
 
 	</section>
-
-
-
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
 
 </body>
 

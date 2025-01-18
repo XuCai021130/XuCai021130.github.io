@@ -1,13 +1,62 @@
+html {
+  font-size: 16px;
+}
+
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.mission-statement img {
+  padding: 2rem;
+}
+
+.mission-statement h1,
+.mission-statement p,
+.mission-statement button {
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.mission-statement p {
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.mission-statement h1 {
+  color: whitesmoke;
+  font-size: 3.7rem;
+}
+
+.mission-statement button {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background: none;
+  border: 0.2rem solid white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.mission-statement a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
 .project-container {
   display: flex;
   align-items: center;
-  /* aligns the items vertically in the center */
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
+  /* margin: 2rem; */
   width: 100%;
 }
 
 .project-image {
-  width: 40%;
+  width: 35%;
   /* Sets each div to occupy 50% of the project-container's width */
   display: flex;
   /* Applies flex layout to help with inner content alignment */
@@ -19,28 +68,61 @@
 }
 
 .project-image img {
-  /* height: 80%; */
-  /* width: 80%; */
-  max-width: 80%;
-  /* object-fit: cover; */
-  /* This will cover the div's area, possibly cropping the image */
+  width: 85%;
+  height: 85%;
   display: block;
   margin: 0 auto;
 }
 
-.project-image-a {
+.project-image a {
   display: inline-block;
   /* Makes the link behave more like an image */
+  height: 100%;
+  width: 100%;
+}
+
+.project-image-background {
+  margin: auto;
+  width: 80%;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: white;
+  background-position: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-description {
   flex-grow: 1;
-  width: 60%;
+  width: 55%;
   margin-left: 20px;
 }
 
-.nav_bar {
-  height: 50px;
+.experience-name {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role-and-date {
+  font-size: 1.4rem;
+  font-weight: 550;
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.header-section {
+  height: 100vh;
+  background-image: url(./images/hacker.jpg);
+  background-position: center;
+}
+
+.nav-bar {
+  height: 3rem;
   /* background-color: grey; */
   background-image: url(./images/blue.jpg);
   opacity: 0.85;
@@ -50,20 +132,19 @@
   z-index: 1000;
 }
 
-.nav_bar a {
-  font-size: 16px;
+.nav-bar a {
+  font-size: 1rem;
   font-weight: bold;
-  width: 250px;
-  /* height: 40px; */
+  width: 20%;
   display: inline-block;
   color: white;
   text-decoration: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 3rem;
   transition: background-color 0.7s ease, transform 0.3s ease;
 }
 
-.nav_bar a:hover {
+.nav-bar a:hover {
   color: #ffee10;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
@@ -71,16 +152,57 @@
   transform: scale(1.1);
 }
 
-.subtitle {
+.nav-bar nav {
+  height: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
   color: white;
+  font-weight: 700;
+  margin-left: 6rem;
+  margin-bottom: 4rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.body_text {
+.icon-and-name {
+  font-size: 1.6rem;
+  font-weight: 550;
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.school-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white
+}
+
+.icon-and-name div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 1.2rem;
   line-height: 2;
   color: rgba(245, 245, 245, 0.801)
+}
+
+.experiences {
+  color: white;
+  align-items: stretch;
+  background-image: url(./images/star.jpg);
+  padding-top: 4rem;
+  background-size: cover;
 }
 
 .section {
@@ -91,89 +213,158 @@
   padding: 10px;
   /* Padding inside sections */
   border-radius: 5px;
-  /* Optional: rounds the corners of the section */
 }
 
-.column-header {
-  /* background-color: #555; */
-  color: white;
-  text-align: center;
-}
-
-.column-content {
-  /* background-color: #f9f9f9; */
-  vertical-align: top;
-}
-
-.container {
-  max-width: 1500px;
-  /* width: 100vw; */
+.self-intro {
   background-image: url('./images/dark.jpg');
   background-size: cover;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .intro-section {
   display: flex;
-  margin-bottom: 50px;
-  margin-left: 30px;
-  margin-top: 0px;
-  padding: 10px;
+  margin-bottom: 2rem;
   border-bottom: 1px solid gray;
 }
 
 .intro-section img {
   border-radius: 70%;
-  margin-top: 80px;
-  margin-left: 50px;
+  /* margin-top: 5rem; */
 }
 
+.profile-picture {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture img {
+  width: 70%;
+  max-width: 300px;
+  height: auto;
+}
+
+.intro-text {
+  width: 66.7%;
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-.skill_container {
+.skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.skill_box {
+.skill-box {
   background-color: rgba(255, 255, 255, 0.134);
   flex: 0 0 48%;
-  height: 300px;
-  margin-bottom: 20px;
-  border: 1px solid #000;
+  margin-bottom: 2rem;
   box-sizing: border-box;
-  line-height: 35px;
+  line-height: 2rem;
 }
 
 .brighter {
   color: #ffff99bf;
-  /* dark yellow */
-  /* color: #f0f0f0;    */
 }
 
-.tech_container {
+.tech-container {
   display: flex;
   align-items: center;
   /* Center vertically */
 }
 
-.tool_image {
+.tool-image {
   width: 15%;
   display: flex;
   justify-content: center;
   /* Center horizontally */
 }
 
-.tool_image img {
+.tool-image img {
   max-width: 100%;
   height: auto;
 }
 
-.skillset_text {
+.skillset {
   width: 70%;
+  font-size: 1.4rem;
+  color: #8ABAD3FF;
+  word-spacing: 0.15rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section .copyright {
+  font-size: 18px;
+  color: gray;
+}
+
+.get-in-touch {
+  border-top: 1px solid rgba(255, 255, 255, 0.705);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.get-in-touch-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.get-in-touch-text h5 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.contact-keywords {
+  /* font-size: 3rem; */
+  color: white;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul.social-medias {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  gap: 3rem;
+}
+
+ul.social-medias li {
+  display: flex;
+  align-items: center;
+}
+
+ul.social-medias li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.social-medias li a.social-icon {
+  width: 2rem;
+  /* Adjust the size as needed */
+  height: 1.5rem;
+  /* Adjust the size as needed */
+  margin-right: 1rem;
 }
