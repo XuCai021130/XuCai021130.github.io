@@ -15,8 +15,7 @@ html {
 }
 
 .mission-statement h1,
-.mission-statement p,
-.mission-statement button {
+.mission-statement p {
   margin: 1.5rem 0;
   padding: 1rem;
 }
@@ -32,16 +31,29 @@ html {
   font-size: 3.7rem;
 }
 
-.mission-statement button {
+.mission-statement a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.discover-and-resume {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.discover-and-resume button {
   font-family: 'Times New Roman', Times, serif;
   color: white;
   background: none;
   border: 0.2rem solid white;
   cursor: pointer;
   border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
 }
 
-.mission-statement a {
+.discover-and-resume a {
   color: white;
   text-decoration: none;
   font-size: 1.8rem;
