@@ -212,9 +212,10 @@ html {
 .experiences {
   color: white;
   align-items: stretch;
-  background-image: url(./images/star.jpg);
+  background-image: url(./images/dark.jpg);
+  /* background-color: black; */
   padding-top: 4rem;
-  background-size: cover;
+  background-size: auto;
 }
 
 .section {
@@ -228,7 +229,7 @@ html {
 }
 
 .self-intro {
-  background-image: url('./images/dark.jpg');
+  background-color: black;
   background-size: cover;
 }
 
@@ -317,10 +318,15 @@ html {
 
 .footer-section {
   text-align: center;
+  margin-bottom: 0;
 }
 
-.footer-section .copyright {
-  font-size: 18px;
+.footer-section p {
+  margin-bottom: 0;
+}
+
+.copyright {
+  font-size: 1rem;
   color: gray;
 }
 
