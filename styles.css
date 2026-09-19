@@ -135,13 +135,17 @@ html {
 
 .nav-bar {
   height: 3rem;
-  /* background-color: grey; */
   background-image: url(./images/blue.jpg);
   opacity: 0.85;
   position: fixed;
-  top: 0;
+  top: -3rem;
   width: 100%;
   z-index: 1000;
+  transition: all .5s;
+}
+
+.nav-bar--visible {
+  top: 0;
 }
 
 .nav-bar a {

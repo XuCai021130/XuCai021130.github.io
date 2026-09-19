@@ -538,7 +538,7 @@
 					</ul>
 					<div class="tech-container">
 						<div class="tool-image">
-							<img src="./images/tool-box.png">
+							<img src="./images/tool-box.png" alt="">
 						</div>
 						<div class="skillset">
 							Technology used:&nbsp;Express.js, HTML, CSS, Mongo DB, JavaScript
@@ -581,7 +581,7 @@
 					</ul>
 					<div class="tech-container">
 						<div class="tool-image">
-							<img src="./images/tool-box.png">
+							<img src="./images/tool-box.png" alt="">
 						</div>
 						<div class="skillset">
 							Technology used:&nbsp;Python, NumPy, Pandas, Relational Database, Jupyter Notebook, Google Scholar
@@ -594,7 +594,7 @@
 
 		<!-- Contact -->
 		<div class="get-in-touch" id="contact">
-			<img src="./images/communicate.png">
+			<img src="./images/communicate.png" alt="">
 			<div class="get-in-touch-text">
 				<h1><i><strong class="section-title">Get in Touch</strong></i></h1>
 				<h5>
@@ -646,6 +646,22 @@
 
 	</section>
 
+	<script>
+		const navBar = document.querySelector('.nav-bar');
+		const intro = document.querySelector('.intro-section');
+		const triggerPoint = intro.offsetTop;
+	
+		const updateNavBar = () => {
+			if (!navBar || !intro) return;
+
+			if (window.scrollY >= triggerPoint) navBar.classList.add('nav-bar--visible');
+			else navBar.classList.remove('nav-bar--visible');
+		};
+
+		updateNavBar();
+		window.addEventListener('scroll', updateNavBar);
+		window.addEventListener('resize', updateNavBar);
+	</script>
 </body>
 
 </html>
